@@ -23,6 +23,7 @@ public class ProductController {
 	
 	// post method 
 	//@RequestBody anotation to tell this to accept jason request
+	//regeg
 	@PostMapping("/addProduct")
 	public Product addProduct(@RequestBody Product product) {
 		 

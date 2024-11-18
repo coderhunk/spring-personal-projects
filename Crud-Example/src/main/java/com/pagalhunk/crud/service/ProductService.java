@@ -43,6 +43,9 @@ public class ProductService {
 		repository.deleteById(id);
 		return "Product removed:  "+id;
 	}
+	public void test() {
+		System.out.println("Testing");
+	}
 	public Product updateProduct(Product product) {
 		Product existingProduct=repository.findById(product.getId()).orElse(null);
 		existingProduct.setName(product.getName());
